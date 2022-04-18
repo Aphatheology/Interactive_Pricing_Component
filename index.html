@@ -6,7 +6,7 @@
 
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
   <link rel="stylesheet" href="style.css">
-  <!-- <link rel="stylesheet" href="customrange.css"> -->
+  <link rel="stylesheet" href="newrange.css">
   <title>Frontend Mentor | Interactive pricing component</title>
 </head>
 <body>
@@ -17,16 +17,19 @@
     </header>
 
     <section class="range">
-        <h3 class="pageview"><span id="output"></span>K Pageviews</h3>
-        <div class="slidecontainer">
-            <input type="range" min="1" max="200" value="100" class="slider" id="myRange">
+        <div class="rangefirst">
+            <h3 class="pageview"><span id="output">100</span>K Pageviews</h3>
+            <div class="slidecontainer">
+                <input type="range" min="1" max="200" value="100" class="slider" id="myRange">
+            </div>
+            <h3 class="rate"><span class="amount">$16.00</span> /month</h3>
         </div>
-        <h3 class="rate"><span class="amount">$16.00</span> /month</h3>
+        
         <div class="togglesection">
             <h4>Monthly Billing</h4>
             <div class="toggle">
                 <label class="switch">
-                    <input type="checkbox">
+                    <input id="toggle" type="checkbox">
                     <span class="toggleball round"></span>
                 </label>
             </div>
